@@ -1,6 +1,7 @@
 buildscript {
     ext {
         springBootVersion = '2.0.4.RELEASE'
+        springCloudVersion = 'Finchley.SR1'
     }
     repositories {
         mavenCentral()
@@ -17,15 +18,10 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.ndamelio.learning'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 10
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-}
-
-
-ext {
-    springCloudVersion = 'Finchley.SR1'
 }
 
 dependencies {
